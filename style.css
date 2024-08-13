@@ -1,0 +1,167 @@
+body {
+  background: url('assets/pattern.png') center/cover no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #05115B;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.div__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.div__logo img {
+  max-height: 120px;
+}
+
+.div__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div__heading h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+
+.div__heading img {
+  max-height: 150px;
+}
+
+.div__subheading h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.div__subheading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.div__download {
+  color: #3C54B4;
+  margin-top: 1.5rem;
+}
+
+.div__download div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.div__download div a img {
+  cursor: pointer;
+}
+
+.div__main-hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.div__footer {
+  display: none;
+  height: 15%;
+  color: #fff;
+  width: 100%;
+  background-color: #4C4DAF;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div__logo img {
+    margin-top: 50px;
+  }
+
+  .div__heading h1 {
+    font-size: 3rem;
+  }
+
+  .div__heading img {
+    max-height: 130px;
+  }
+
+  .div__subheading h1 {
+    font-size: 1.5rem;
+  }
+
+  .div__subheading p {
+    font-size: 1.5rem;
+  }
+
+  .div__download {
+    display: none;
+  }
+
+  .div__main-hero {
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+
+  .div__main-hero img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .div__footer {
+    display: block;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .div__logo img {
+    max-height: 80px;
+  }
+
+  .div__heading h1 {
+    font-size: 2rem;
+  }
+
+  .div__heading img {
+    max-height: 80px;
+  }
+
+  .div__subheading h1 {
+    font-size: 1.3rem;
+  }
+
+  .div__subheading p {
+    font-size: 1.3rem;
+  }
+
+  .div__footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .div__footer__img {
+    max-height: 50px;
+  }
+}
