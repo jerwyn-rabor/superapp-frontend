@@ -1,5 +1,5 @@
-body {
-  background: url('assets/pattern.png') center/cover no-repeat;
+#div__body {
+  background: url('https://assets-dev.petpal.asia/wp-content/uploads/2024/08/12173113/pattern.png') center/cover no-repeat;
   margin: 0;
   padding: 0;
   color: #05115B;
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+.div__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -91,7 +91,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .div__container {
     flex-direction: column;
     text-align: center;
   }
